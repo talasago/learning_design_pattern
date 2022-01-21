@@ -1,11 +1,10 @@
 from Book import Book
 
 class BookShelf():
-    __books: list[Book] = []
-    __index :int = 0
-
     def __init__(self, maxsize: int) -> None:
         self.__maxsize = maxsize
+        self.__books: list[Book] = []
+        self.__index :int = 0
 
     def getBookAt(self, index: int) -> Book:
         return self.__books[index]
