@@ -2,6 +2,7 @@ from AbstractDisplay import AbstractDisplay
 from unicodedata import east_asian_width
 from functools import reduce
 from operator import add
+
 class StringDisplay(AbstractDisplay):
     def __init__(self, string: str) -> None:
         self.string :str = string
