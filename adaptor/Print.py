@@ -2,9 +2,9 @@ from abc import ABCMeta, abstractmethod
 
 class Print(metaclass=ABCMeta):
     @abstractmethod
-    def printWeek() -> None:
+    def printWeek(self) -> None:
         pass
 
     @abstractmethod
-    def printStrong() -> None:
+    def printStrong(self) -> None:
         pass
