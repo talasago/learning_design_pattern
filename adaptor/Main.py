@@ -2,7 +2,7 @@
 from Print import Print
 from PrintBanner import PrintBanner
 
-def main():
+def main() -> None:
     p :Print = PrintBanner('Hello')
     p.printWeek()
     p.printStrong()
