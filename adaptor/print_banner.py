@@ -1,9 +1,9 @@
-from Print import Print
-from Banner import Banner
+from print import Print
+from banner import Banner
 
 class PrintBanner(Print):
     def __init__(self, string: str) -> None:
-        self.banner :Banner = Banner(string)
+        self.banner: Banner = Banner(string)
 
     def printWeek(self) -> None:
         self.banner.showWithParen()
