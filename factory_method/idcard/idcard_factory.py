@@ -1,7 +1,7 @@
-# 後で消す
 from framework.factory import Factory
 from framework.product import Product
 from .idcard import IDCard
+
 
 class IDCardFactory(Factory):
     __onwers = []

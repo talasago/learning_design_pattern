@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod
 from typing import final
 from .product import Product
 
+
 class Factory(metaclass=ABCMeta):
     @final
     def create(self, owner: str) -> Product:

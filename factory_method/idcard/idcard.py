@@ -1,5 +1,6 @@
 from framework.product import Product
 
+
 class IDCard(Product):
     def __init__(self, owner: str) -> None:
         print(f'{owner}のカードを作ります')
