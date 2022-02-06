@@ -8,10 +8,6 @@ def main():
     manager: Manager = Manager()
     upen: UnderLinePen = UnderLinePen('~')
     mbox: MessageBox = MessageBox('*')
-    mbox.test = 2
-    print(mbox.decochar)
-    print(mbox.test)
-
     sbox: MessageBox = MessageBox('/')
     manager.register('strong message', upen)
     manager.register('warning box', mbox)
