@@ -1,11 +1,12 @@
-from AbstractDisplay import AbstractDisplay
+from abstract_display import AbstractDisplay
 from unicodedata import east_asian_width
 from functools import reduce
 from operator import add
 
+
 class StringDisplay(AbstractDisplay):
     def __init__(self, string: str) -> None:
-        self.string :str = string
+        self.string: str = string
         #self.width: int = self.__str_len(string)
         self.width: int = reduce(
             # 全角2文字、半角1文字とする

@@ -1,6 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import final
 
+
 class AbstractDisplay(metaclass=ABCMeta):
     @abstractmethod
     def open(self) -> None:
