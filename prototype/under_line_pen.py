@@ -22,8 +22,4 @@ class UnderLinePen(Product):
         print('')
 
     def createClone(self) -> Product:
-        try:
-            p: Product = copy.copy(self)
-        except:
-            raise
-        return p
+        return copy.deepcopy(self)

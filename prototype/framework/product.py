@@ -1,5 +1,6 @@
-from __future__ import annotations # 自分自身のクラスを返せるようにする。
+from __future__ import annotations  # 自分自身のクラスを返せるようにする。
 from abc import ABCMeta, abstractmethod
+
 
 class Product(metaclass=ABCMeta):
     @abstractmethod

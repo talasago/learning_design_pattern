@@ -4,12 +4,13 @@ from operator import add
 from unicodedata import east_asian_width
 import copy
 
+
 class MessageBox(Product):
     def __init__(self, decochar: str) -> None:
-        self.decochar :str = decochar
+        self.decochar: str = decochar
 
     def use(self, s: str) -> None:
-        length :int = reduce(
+        length: int = reduce(
             # 全角2文字、半角1文字とする
             add, [2 if east_asian_width(ch) in 'FWA' else 1 for ch in s]
         )
@@ -23,8 +24,4 @@ class MessageBox(Product):
         print('')
 
     def createClone(self) -> Product:
-        try:
-            p :Product = copy.copy(self) # 浅いコピー
-        except:
-            raise
-        return p
+        return copy.deepcopy(self)
