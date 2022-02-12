@@ -1,7 +1,7 @@
 {
     "python.linting.lintOnSave": false,
     "python.linting.pylintEnabled": false,
-    "python.linting.pep8Enabled": false,
+    "python.linting.pep8Enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
         "--ignore=W293, W504",
