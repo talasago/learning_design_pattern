@@ -9,8 +9,8 @@ from factory.factory import Factory
 def main():
     args = sys.argv
     if len(args) != 2:
-        print('Usage: python      modulename.ConcreteFactory')
-        print('Example 1: python  modulename.ListFactory')
+        print('Usage: python      moduledirectory.modulename.ConcreteFactory')
+        print('Example 1: python  moduledirectory.modulename.ListFactory')
         exit(0)
 
     factory: Factory = Factory.get_factory(args[1])
