@@ -5,14 +5,15 @@ from text_builder import TextBuilder
 
 
 def main(args: list[str]) -> None:
+    director: Director
     if args[1] == 'plain':
         text_builder: TextBuilder = TextBuilder()
-        director: Director = Director(text_builder)
+        director = Director(text_builder)
         director.construct()
         print(text_builder.get_result())
     elif args[1] == 'html':
         html_builder: HtmlBuilder = HtmlBuilder()
-        director: Director = Director(html_builder)
+        director = Director(html_builder)
         director.construct()
         print(f'{html_builder.get_result()}が作成されました。')
     else:

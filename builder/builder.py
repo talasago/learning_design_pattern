@@ -15,5 +15,5 @@ class Builder(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def close() -> None:
+    def close(self) -> None:
         pass
