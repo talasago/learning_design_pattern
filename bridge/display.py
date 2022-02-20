@@ -4,6 +4,9 @@ from display_impl import DisplayImpl
 
 class Display():
     def __init__(self, impl: DisplayImpl) -> None:
+        if not isinstance(impl, DisplayImpl):
+            raise TypeError("Expected object of type DisplayImpl, got {}".
+                            format(type(impl).__name__))
         self.__impl: DisplayImpl = impl
 
     def open(self) -> None:
