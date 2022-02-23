@@ -18,7 +18,6 @@ class FightResultValue(int, Enum):
 class Hand:
     hands: list[Hand] = []
 
-    # TODO:privateにする方法。手間がかかるので後回し
     def __init__(self, hand_value: int) -> None:
         self.__hand_value: int = hand_value
 

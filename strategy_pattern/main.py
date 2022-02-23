@@ -9,8 +9,7 @@ from winning_strategy import WinningStrategy
 def main() -> None:
     args = sys.argv
     if len(args) != 3:
-        # TODO:コメント
-        print('python main ..')
+        print('python main randomseed1 randomseed2')
         exit(0)
 
     seed1: int = int(args[1])
